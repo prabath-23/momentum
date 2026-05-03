@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@source "../index.html";
+@source "./**/*.{js,jsx,ts,tsx}";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    min-width: 320px;
+    background: #f8fbff;
+    color-scheme: light;
+  }
+
+  body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: "SF Pro Text", "Aptos", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background:
+      radial-gradient(circle at 8% -8%, rgba(125, 211, 252, 0.38), transparent 30rem),
+      radial-gradient(circle at 92% 6%, rgba(167, 243, 208, 0.38), transparent 26rem),
+      radial-gradient(circle at 54% 10%, rgba(196, 181, 253, 0.22), transparent 28rem),
+      #f8fbff;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+
+  svg {
+    display: block;
+  }
+}
+
+#root {
+  min-height: 100vh;
+}

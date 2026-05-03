@@ -1,0 +1,25 @@
+{
+  "name": "momentum-habit-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A polished habit and task tracker with dashboard, targets, daily marking, week/month/year heatmaps.",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
+  }
+}
